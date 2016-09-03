@@ -1,0 +1,1 @@
+{foreach from=$examDetails key=yearId item=i}<option value="{$i.exam_code}">{$i.exams}</option>{/foreach}
