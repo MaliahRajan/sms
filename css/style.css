@@ -2,13 +2,9 @@ html, body {
     width: 100%;
     min-height: 100%;
 }
-.customLabelSearch label
+.customLabelSearch div label
 {
-	margin: -5px 0px 0px 180px
-}
-.customLabelSort label
-{
-	margin: -7 0 7 0px;
+	float: right !important;
 }
 .customHeading
 {
