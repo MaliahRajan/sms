@@ -1,6 +1,7 @@
 <div class="row">
 		<input type="hidden" id="appPath" value="{$appPath}">
 		<input type="hidden" id="basePath" value="{$basePath}">
+		<div class="col-lg-12">
 	 		<div class="container-fluid">
 	 			<div class="panel panel-primary">
 	 				 <div class="panel-heading">
@@ -53,6 +54,7 @@
 	 					</div>
 				</div>
 			</div>
+		</div>
 </div>
 
 <div id="addDepartment" class="modal fade" role="dialog">

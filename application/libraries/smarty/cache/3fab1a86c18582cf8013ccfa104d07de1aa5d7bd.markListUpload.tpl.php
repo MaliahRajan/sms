@@ -1,5 +1,5 @@
 <?php
-/*%%SmartyHeaderCode:6369910265641968491cb46_06597641%%*/
+/*%%SmartyHeaderCode:466646502571627701dbff9_51670729%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -7,11 +7,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '3fab1a86c18582cf8013ccfa104d07de1aa5d7bd' => 
     array (
       0 => '/var/www/html/myProject/StudentManagement/application/views/templates/markListUpload.tpl',
-      1 => 1447137961,
+      1 => 1455113301,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '6369910265641968491cb46_06597641',
+  'nocache_hash' => '466646502571627701dbff9_51670729',
   'tpl_function' => 
   array (
   ),
@@ -26,12 +26,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_56419684997ee0_01603264',
+  'unifunc' => 'content_57162770239c95_06264781',
   'cache_lifetime' => 120,
 ),true);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_56419684997ee0_01603264')) {
-function content_56419684997ee0_01603264 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_57162770239c95_06264781')) {
+function content_57162770239c95_06264781 ($_smarty_tpl) {
 ?>
 <div class="row">
 		<input type="hidden" id="appPath" value="localhost/myProject/StudentManagement/application">
@@ -84,6 +84,7 @@ function content_56419684997ee0_01603264 ($_smarty_tpl) {
 						               							               		 <option value="2">Daily Test 2</option>
 						               							               		 <option value="3">sem 1</option>
 						               							               		 <option value="4">Daily Test 3</option>
+						               							               		 <option value="5">jjj</option>
 						               							            </select>
 					            </span>
 								<button class="btn btn-primary" style="margin:5 15 0px" onclick="uploadStudentMarklist()"><i class="fa fa-upload"></i>
