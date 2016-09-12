@@ -14,9 +14,9 @@
 							               	{/foreach}
 							        </select>
 					        </div>
-					        <div class="col-lg-3" onchange="changeSemester(this.value)">
+					        <div class="col-lg-3">
 					        	<label>Year</label>
-					            <select class="form-control" id="studentYear">
+					            <select class="form-control" id="studentYear" onchange="changeSemester(this.value)">
 					               	{foreach from=$year key=yearId item=i}
 					               		 <option value="{$i.year_code}">{$i.year}</option>
 					               	{/foreach}

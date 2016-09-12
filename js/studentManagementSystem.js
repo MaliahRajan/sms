@@ -534,7 +534,6 @@ function changeSemester(year)
 	  year = year*2;
 	  semester.push(year-1);
 	  semester.push(year);
-	  console.log(semester);
 	  for(i=0;i<semester.length;i++)
 	  {
 	    response += '<option value="'+semester[i]+'">'+alphabets[semester[i]-1]+'Semester</option>';
