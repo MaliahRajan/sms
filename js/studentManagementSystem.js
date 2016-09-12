@@ -526,3 +526,18 @@ function overallFetchedReport()
 	}
 	xajax_overallFetchedReport(selectedExamDetails);
 }
+function changeSemester(year)
+{
+	  var alphabets = ['First','Second','Third','Fourth','Fifth','Sixth','Seventh','Eighth'];
+	  var semester = [];
+	  var response = '';
+	  year = year*2;
+	  semester.push(year-1);
+	  semester.push(year);
+	  console.log(semester);
+	  for(i=0;i<semester.length;i++)
+	  {
+	    response += '<option value="'+semester[i]+'">'+alphabets[semester[i]-1]+'Semester</option>';
+	  }
+	  $('#studentSemester').html(response);
+}
