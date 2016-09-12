@@ -25,9 +25,9 @@
 <script type="text/javascript" src="js/bootstrap-filestyle.min.js"></script>
 <script type="text/javascript" src="js/selectFx.js"></script>
 <script type="text/javascript" src="js/classie.js"></script>
-<script type="text/javascript" src="js/fusioncharts-jquery-plugin.min.js"></script>
-<script type="text/javascript" src="js/fusioncharts.charts.js"></script>
 <script type="text/javascript" src="js/fusionCharts.js"></script>
+<script type="text/javascript" src="js/fusioncharts.charts.js"></script>
+<script type="text/javascript" src="js/fusioncharts-jquery-plugin.min.js"></script>
 <script type="text/javascript" src="js/jquery.multiple.select.js"></script>
 <script src="js/sb-admin-2.js"></script>
 <script>
