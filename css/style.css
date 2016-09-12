@@ -78,3 +78,6 @@ html, body {
   top: 0;
   left: 4px;
 }
+.ms-parent{
+  min-width: 50% !important;
+}

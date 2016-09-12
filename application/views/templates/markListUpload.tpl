@@ -1,7 +1,6 @@
 <div class="row">
 		<input type="hidden" id="appPath" value="{$appPath}">
 		<input type="hidden" id="basePath" value="{$basePath}">
-		<div class="col-lg-12">
 	 		<div class="container-fluid">
 	 			<div class="panel panel-primary">
 	 				 <div class="panel-heading">
@@ -16,48 +15,46 @@
 									<input type="file" id="uploadMarklist" class="uploadMarklist" name="uploadMarklist">
 								</div>
 							</div>
-								<div class="col-lg-12">
-								</br>
-								<span style="margin-left:-10px">
-						            <select class="cs-select cs-skin-elastic" id="studentDepartment">
-						               <option value="" disabled selected>Select Department</option>
+							<br>
+							<div class="row">
+								<div class="col-lg-3">
+									<label>Department</label>
+						            <select class="form-control" id="studentDepartment">
 						               	{foreach from=$department key=departId item=i}
 						               		 <option value="{$i.department_code}">{$i.department_name}</option>
 						               	{/foreach}
 						            </select>
-						        </span>
-						        <span style="margin-left:10px">
-						            <select class="cs-select cs-skin-elastic" id="studentYear">
-						               <option value="" disabled selected>Select Year</option>
+						        </div>
+						        <div class="col-lg-2">
+						        	<label>Year</label>
+						            <select class="form-control" id="studentYear">
 						               	{foreach from=$year key=yearId item=i}
 						               		 <option value="{$i.year_code}">{$i.year}</option>
 						               	{/foreach}
 						            </select>
-						        </span>
-						        <span style="margin-left:10px">
-						            <select class="cs-select cs-skin-elastic" id="studentYear">
-						               <option value="" disabled selected>Select Semester</option>
+						        </div>
+						        <div class="col-lg-2">
+						       		 <label>Semester</label>
+						            <select class="form-control" id="studentYear">
 						               	{foreach from=$year key=yearId item=i}
 						               		 <option value="{$i.year_code}">{$i.year}</option>
 						               	{/foreach}
 						            </select>
-						        </span>
-					            <span style="margin-left:10px">
-						            <select class="cs-select cs-skin-elastic" id="studentExam">
-						               <option value="" disabled selected>Select Exam</option>
+						        </div>
+						        <div class="col-lg-3">
+						        	<label>Exam</label>
+						            <select class="form-control" id="studentExam">
 						               	{foreach from=$exams key=exam item=i}
 						               		 <option value="{$i.exam_code}">{$i.exams}</option>
 						               	{/foreach}
 						            </select>
-					            </span>
-								<button class="btn btn-primary" style="margin:5 15 0px" onclick="uploadStudentMarklist()"><i class="fa fa-upload"></i>
- Upload</button>
-
+					            </div>
+					            <div class="col-lg-2">
+									<button class="btn btn-primary" style="margin-top:17%" onclick="uploadStudentMarklist()"><i class="fa fa-upload"></i> Upload</button>				</div>
 								</div>
 	 					</div>
 				</div>
 			</div>
-		</div>
 </div>
 
 <div id="addDepartment" class="modal fade" role="dialog">

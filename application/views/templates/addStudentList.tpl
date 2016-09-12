@@ -1,7 +1,6 @@
 <div class="row">
 		<input type="hidden" id="appPath" value="{$appPath}">
 		<input type="hidden" id="basePath" value="{$basePath}">
-		<div class="col-lg-12">
 	 		<div class="container-fluid">
 	 			<div class="panel panel-primary">
 	 				 <div class="panel-heading">
@@ -18,43 +17,50 @@
 							</div>
 							</br>
 							<div class="row">
-							<div class="form-group">
-			   				<label style="margin-left:20px">Department</label>
-			   				<span style="margin-left:10px">
-					            <select class="cs-select cs-skin-elastic" id="studentDepartment">
-						            <option value="" disabled selected>Select Department</option>
-						            	{foreach from=$department key=departId item=i}
-						               		 <option value="{$i.department_code}">{$i.department_name}</option>
-						               	{/foreach}
-						        </select>
-					        </span>
-					        <label style="margin-left:15px">Year</label>
-				            <span style="margin-left:10px">
-					            <select class="cs-select cs-skin-elastic" id="studentYear">
-					               <option value="" disabled selected>Select Year</option>
-					               	{foreach from=$year key=yearId item=i}
-					               		 <option value="{$i.year_code}">{$i.year}</option>
-					               	{/foreach}
-					            </select>
-				            </span>
-				            <label style="margin-left:15px">Semester</label>
-				            <span style="margin-left:10px">
-					            <select class="cs-select cs-skin-elastic" id="studentYear">
-					               <option value="" disabled selected>Select Semester</option>
-					               	{foreach from=$year key=yearId item=i}
-					               		 <option value="{$i.year_code}">{$i.year}</option>
-					               	{/foreach}
-					            </select>
-				            </span>
-				             <span style="margin-left:20px">
-					            <button class="btn btn-primary" style="margin-left:10px" onclick="uploadStudentProfile()"><i class="fa fa-upload"></i> Upload</button>
-				            </span>
-						</div>
+								<div class="form-group">
+									<div class="col-lg-3">
+						   				<label>Department</label>
+						   				<span>
+								            <select class="form-control" id="studentDepartment">
+									            <option value="" disabled selected>Select Department</option>
+									            	{foreach from=$department key=departId item=i}
+									               		 <option value="{$i.department_code}">{$i.department_name}</option>
+									               	{/foreach}
+									        </select>
+								        </span>
+								    </div>
+								    <div class="col-lg-3">
+							        <label>Year</label>
+						            <span>
+							            <select class="form-control" id="studentYear">
+							               <option value="" disabled selected>Select Year</option>
+							               	{foreach from=$year key=yearId item=i}
+							               		 <option value="{$i.year_code}">{$i.year}</option>
+							               	{/foreach}
+							            </select>
+						            </span>
+						          	</div>
+						          	<div class="col-lg-3">
+						            <label>Semester</label>
+						            <span>
+							            <select class="form-control" id="studentYear">
+							               <option value="" disabled selected>Select Semester</option>
+							               	{foreach from=$year key=yearId item=i}
+							               		 <option value="{$i.year_code}">{$i.year}</option>
+							               	{/foreach}
+							            </select>
+						            </span>
+						            </div>
+						            <div class="col-lg-3">
+						             <span>
+							            <button class="btn btn-primary" onclick="uploadStudentProfile()"  style="margin-top: 10%"><i class="fa fa-upload"></i> Upload</button>
+						            </span>
+						          	</div>
+								</div>
 							</div>
 	 					</div>
 				</div>
 			</div>
-		</div>
 </div>
 
 <div id="addDepartment" class="modal fade" role="dialog">
@@ -72,13 +78,12 @@
 	      		<label  style="margin:14px 50px 20px">Enter Deparment</label>
 	      	</div>
 	      	<div class="col-lg-6">
-	      		<input type="text" class="form-control" id="department_name" style="margin-left: -40px;
-">
+	      		<input type="text" class="form-control" id="department_name">
 	      	</div> 
-<!-- 	      	<div class="col-lg-2">
-	      		<button class="btn btn-primary" onclick="addDepartment()"> submit </button>
-	      	</div>  -->
-	      	<div class="col-lg-12">
+      	</div>
+      	<br>
+      	<div class="row">
+      		<div class="col-lg-12">
 			     <button class="btn btn-Danger" class="close" data-dismiss="modal"><i class="fa fa-close"></i> Close </button>
 		 		<button class="btn btn-success pull-right" onclick="addDepartment()"><i class="fa fa-save"></i> Save </button>
 			</div> 
