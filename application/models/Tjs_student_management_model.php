@@ -315,6 +315,13 @@
 				}
 				return $excelFileNames;
 			}
+			public function fetchStudentReport($groupId)
+			{
+				$this->db->select('student_profile_no');
+				$query = $this->db->get_where('student_profile', array('parent_id' => $groupId));
+			    $resultData =  $query->result_array();
+				return $resultData;
+			}
 
 	}
 

@@ -4,7 +4,7 @@
 					<div class="container" style="padding-top:20px;">
 				  		<div id="footer">
 				  			<div class="col-lg-10">
-				  				Infiniti Software Solutions
+				  				TJS Engineering College
 				  			</div>
 				  			<div class="col-lg-2">
 				  				copyright (c) 2015
